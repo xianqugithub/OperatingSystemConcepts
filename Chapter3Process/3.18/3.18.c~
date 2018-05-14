@@ -1,0 +1,15 @@
+#include <sys/types.h>
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+
+#define BUFFER_SIZE 100
+#define READ_END 0
+#define WRITE_END 1
+
+int main()
+{
+  write 
+
+
+}
