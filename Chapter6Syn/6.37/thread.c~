@@ -1,0 +1,28 @@
+#include <stdlib.h>
+#include "buffer.h"
+
+void *producer(void *param) {
+  buffer_item item;
+  while (1) {
+    sleep(st); // sleep 
+    item = rand(); // generate a random number
+    if (!insert_item(item))
+      printf("error");
+    else
+      printf("producer produced %d\n", item);
+  }
+
+}
+
+void *consumer(void *param) {
+
+  buffer_item item;
+  
+  while (1) {
+    sleept(st);
+    if (!remove_item(&item))
+      printf("error");
+    else
+      printf("consumer consumed %d\n", item);
+  }
+}

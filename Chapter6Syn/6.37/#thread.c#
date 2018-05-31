@@ -1,0 +1,3 @@
+#include "buffer.h"
+#define RAND_DIVISOR 100000000
+
